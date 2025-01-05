@@ -64,7 +64,7 @@ class Particle {
     // fill(this.col);
     noFill();
       
-    rect(i*10,0,this.size,50);
+    rect(i*2,0,this.size,50); //try i*10
     pop();
     }
     
