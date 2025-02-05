@@ -10,8 +10,8 @@ P5.toggle(0) // optionally hide p5
 
 src(s0)
 	.modulate(noise(200,0,0))
-	.modulateRepeat(osc(10),1,2,0,-.5)
-	.modulateRotate(osc(10))
+	.modulateRepeat(osc(10),1,2,0,.6)
+	.modulateRotate(noise(10))
 	.out()
 // sandbox - end
 
@@ -21,7 +21,7 @@ let ctx;
 let motions = [];
 let motionClasses = [];
 let sceneTimer = 0;
-let resetTime = 60 * 25;
+let resetTime = 60 * 10;
 let fadeOutTime = 30;
 
 function setup() {
